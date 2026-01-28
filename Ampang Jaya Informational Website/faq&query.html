@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faqs & Query</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="ampang_jaya_logo.png" type="logo">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <body class="b1">
+        <header>
+            <a href="webmaster.html">
+                <img src="logo.jpeg" alt="Ampang Jaya Logo" class="logo">
+            </a>
+            <nav>
+                <a href="home.html">Home</a>
+                    <a href="history.html">History</a>
+                    <a href="culture.html">Cultures</a>
+                <li class="dropdown">
+                    <a href="attraction.html" class="dropbtn">Attractions ▾</a>
+                    <div class="dropdown-content">
+                        <a href="nature.html">Natures</a>
+                        <a href="food.html">Foods</a>
+                    </div>
+                </li>
+                    <a href="event.html">Events Calendar</a>
+                <li class="dropdown">
+                <a href="#" class="help-desk">Help desk ▾</a>
+                <div class="dropdown-content">
+                    <a href="faq&query.html">Inquiry</a>
+                    <a href="contact us.html">Contact Us</a>
+                </div>
+                </li>
+            </div>
+            </nav>
+        </header>
+        <div class="section" id="faqs">
+            <h2>Frequently Asked Questions (FAQs)</h2>
+            <ul class="faqs">
+                <li>
+                    <h3><br>1. Where can I find information about the history of Ampang Jaya?</br></h3>
+                    <p>Visit our "History" section to explore the rich heritage and significant milestones of Ampang Jaya.</p>
+                </li>
+                <li>
+                    <h3>2. What are the must-try foods in Ampang Jaya?</h3>
+                    <p>Check out our "Food" section for a list of local delicacies and recommended restaurants.</p>
+                </li>
+                <li>
+                    <h3>3. Can I submit feedback or suggestions for the website?</h3>
+                    <p>Yes, we welcome your feedback! Please use the contact form on the "Helpdesk" page to share your thoughts.</p>
+                </li>
+                <li>
+                    <h3>4. How can I find out about upcoming events in Ampang Jaya?</h3>
+                    <p>Our "Event Calendar" page is regularly updated with details of upcoming community events, festivals, and activities.</p>
+                </li>
+            </ul>
+        </div>
+
+            <!-- Contact Form Section -->
+            <div class="section" id="contact-form">
+                <h2>Submit a Query</h2>
+                <form class="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <p><h5>&copy; 2024 Ampang Jaya Tourism. All rights reserved. Last Updated: <span id="last-updated"></span></h5></p>
+        </footer>
+        <script>
+             // JavaScript to toggle FAQ answers
+        document.querySelectorAll('.faqs li h3').forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.nextElementSibling;
+                answer.style.display = (answer.style.display === 'none' || answer.style.display === '') ? 'block' : 'none';
+            });
+        });
+        </script>
+</html>
