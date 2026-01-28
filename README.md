@@ -1,1 +1,2 @@
 
+This project is a static informational website developed to provide general information about Ampang Jaya, including its background, facilities, attractions, and local services. The website is designed for public awareness and educational purposes.
